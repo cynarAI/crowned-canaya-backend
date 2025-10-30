@@ -1,0 +1,64 @@
+{
+  "kind": "singleType",
+  "collectionName": "startseite",
+  "info": {
+    "singularName": "startseite",
+    "pluralName": "startseiten",
+    "displayName": "Startseite",
+    "description": "Inhalte für die Startseite"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitel": {
+      "type": "string",
+      "default": "Jede Ikone verdient eine Krone"
+    },
+    "heroUntertitel": {
+      "type": "string",
+      "default": "Wo türkische Drag-Eleganz auf Wiener Handwerkskunst trifft."
+    },
+    "heroZitat": {
+      "type": "text",
+      "default": "Ihr habt gesagt, die Welt ist mein Laufsteg... ich habe es persönlich genommen!"
+    },
+    "heroBild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "uberCanayaTitel": {
+      "type": "string",
+      "default": "Über Canaya"
+    },
+    "uberCanayaText": {
+      "type": "richtext"
+    },
+    "statistikGekroenteQueens": {
+      "type": "string",
+      "default": "2000+"
+    },
+    "statistikJahreErfahrung": {
+      "type": "string",
+      "default": "5+"
+    },
+    "statistikInWien": {
+      "type": "string",
+      "default": "1."
+    },
+    "kontaktEmail": {
+      "type": "email",
+      "default": "canaya@crownedbycanaya.com"
+    },
+    "kontaktInstagram": {
+      "type": "string",
+      "default": "@itscanaya"
+    },
+    "kontaktWhatsapp": {
+      "type": "string"
+    }
+  }
+}

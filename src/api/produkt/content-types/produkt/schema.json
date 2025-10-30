@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produkte",
+  "info": {
+    "singularName": "produkt",
+    "pluralName": "produkte",
+    "displayName": "Produkt",
+    "description": "Perücken-Produkte für den Shop"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "beschreibung": {
+      "type": "richtext",
+      "required": true
+    },
+    "preis": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "kategorie": {
+      "type": "enumeration",
+      "enum": [
+        "Lace Front Luxus",
+        "Transparente Lace",
+        "Full Cap Klassik",
+        "Halbkrone",
+        "Echthaar Premium",
+        "Synthetisches Haar"
+      ],
+      "required": true
+    },
+    "produkttyp": {
+      "type": "enumeration",
+      "enum": [
+        "Basis",
+        "Haar-Qualität",
+        "Stil",
+        "Extra",
+        "Pflege"
+      ],
+      "required": true
+    },
+    "bild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "bilder": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "verfuegbar": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "beliebt": {
+      "type": "boolean",
+      "default": false
+    },
+    "sortierung": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

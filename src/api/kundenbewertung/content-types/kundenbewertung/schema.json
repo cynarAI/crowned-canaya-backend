@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kundenbewertungen",
+  "info": {
+    "singularName": "kundenbewertung",
+    "pluralName": "kundenbewertungen",
+    "displayName": "Kundenbewertung",
+    "description": "Testimonials und Kundenbewertungen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "socialHandle": {
+      "type": "string",
+      "required": false
+    },
+    "bewertung": {
+      "type": "richtext",
+      "required": true
+    },
+    "kategorie": {
+      "type": "enumeration",
+      "enum": [
+        "Drag & Performance",
+        "Alltag & Gesundheit",
+        "Hochzeit & Events",
+        "Cosplay & Kostüm"
+      ],
+      "required": true
+    },
+    "verifiziert": {
+      "type": "boolean",
+      "default": false
+    },
+    "sortierung": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
